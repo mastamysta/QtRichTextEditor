@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background: white;
+}
+
+QTabWidget {
+	border: 20px;
+}
+
+QToolButton {
+ 	border-radius: 8px;
+	background: white;
+	selection-background-color: grey;
+}
+
+QToolButton:hover {
+
+	background: darkgrey;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QToolButton" name="toolButton_8">
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../res/fugue-icons-3.5.6/icons/fugue-ic.qrc">
+          <normaloff>:/edit-strike.png</normaloff>:/edit-strike.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="butBold">
+        <property name="styleSheet">
+         <string notr="true">QToolButton {
+ 	border-radius: 8px;
+	background: white;
+	selection-background-color: grey;
+}
+
+QToolButton:hover {
+
+	background: darkgrey;
+}</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../res/fugue-icons-3.5.6/icons/fugue-ic.qrc">
+          <normaloff>:/edit-bold.png</normaloff>:/edit-bold.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="butItal">
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../res/fugue-icons-3.5.6/icons/fugue-ic.qrc">
+          <normaloff>:/edit-italic.png</normaloff>:/edit-italic.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_7">
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../res/fugue-icons-3.5.6/icons/fugue-ic.qrc">
+          <normaloff>:/edit-underline.png</normaloff>:/edit-underline.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_6">
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../res/fugue-icons-3.5.6/icons/fugue-ic.qrc">
+          <normaloff>:/edit-indent-rtl.png</normaloff>:/edit-indent-rtl.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_5">
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../res/fugue-icons-3.5.6/icons/fugue-ic.qrc">
+          <normaloff>:/edit-indent.png</normaloff>:/edit-indent.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_10">
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../res/fugue-icons-3.5.6/icons/fugue-ic.qrc">
+          <normaloff>:/edit-alignment.png</normaloff>:/edit-alignment.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_14">
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../res/fugue-icons-3.5.6/icons/fugue-ic.qrc">
+          <normaloff>:/edit-alignment-right.png</normaloff>:/edit-alignment-right.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_12">
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../res/fugue-icons-3.5.6/icons/fugue-ic.qrc">
+          <normaloff>:/edit-alignment-center.png</normaloff>:/edit-alignment-center.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_13">
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../res/fugue-icons-3.5.6/icons/fugue-ic.qrc">
+          <normaloff>:/edit-alignment-justify.png</normaloff>:/edit-alignment-justify.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_11">
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../res/fugue-icons-3.5.6/icons/fugue-ic.qrc">
+          <normaloff>:/edit-size-down.png</normaloff>:/edit-size-down.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_3">
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../res/fugue-icons-3.5.6/icons/fugue-ic.qrc">
+          <normaloff>:/edit-size-up.png</normaloff>:/edit-size-up.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>9</width>
+        <height>9</height>
+       </size>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="leftMargin">
+         <number>9</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>60</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="ted0">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="baseSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="documentTitle">
+             <string>cumlord</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>60</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_New"/>
+    <addaction name="action_Open"/>
+    <addaction name="action_Save_As"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuText">
+    <property name="title">
+     <string>Text</string>
+    </property>
+    <addaction name="actionBold"/>
+    <addaction name="actionItalic"/>
+    <addaction name="actionUnderline"/>
+    <addaction name="actionStrikethrough"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menuText"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Open">
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+  </action>
+  <action name="action_Save_As">
+   <property name="text">
+    <string>&amp;Save As</string>
+   </property>
+  </action>
+  <action name="action_New">
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+  </action>
+  <action name="actionBold">
+   <property name="text">
+    <string>Bold</string>
+   </property>
+  </action>
+  <action name="actionItalic">
+   <property name="text">
+    <string>Italic</string>
+   </property>
+  </action>
+  <action name="actionUnderline">
+   <property name="text">
+    <string>Underline</string>
+   </property>
+  </action>
+  <action name="actionStrikethrough">
+   <property name="text">
+    <string>Strikethrough</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../res/fugue-icons-3.5.6/icons/fugue-ic.qrc"/>
+ </resources>
+ <connections/>
+</ui>
